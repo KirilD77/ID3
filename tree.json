@@ -1,0 +1,415 @@
+[
+    {
+        "root": {
+            "column": "Величина доходів",
+            "infoGained": 0.42633443109934,
+            "columnInfo": [
+                {
+                    "value": "15-35",
+                    "indexes": [
+                        0,
+                        5,
+                        6,
+                        9,
+                        11,
+                        13
+                    ],
+                    "frequencies": {
+                        "помірний": 4,
+                        "низький": 1,
+                        "високий": 1
+                    },
+                    "entropy": 1.2516291673878228
+                },
+                {
+                    "value": "0-15",
+                    "indexes": [
+                        1,
+                        2,
+                        4,
+                        8,
+                        12,
+                        17,
+                        19
+                    ],
+                    "frequencies": {
+                        "помірний": 2,
+                        "високий": 5
+                    },
+                    "entropy": 0.863120568566631
+                },
+                {
+                    "value": "понад35",
+                    "indexes": [
+                        3,
+                        7,
+                        10,
+                        14,
+                        15,
+                        16,
+                        18
+                    ],
+                    "frequencies": {
+                        "помірний": 5,
+                        "низький": 2
+                    },
+                    "entropy": 0.863120568566631
+                }
+            ]
+        },
+        "rootName": "Величина доходів",
+        "branchValue": "",
+        "parentRoot": ""
+    },
+    {
+        "root": {
+            "column": "Кредитна історія",
+            "infoGained": 0.5849625007211563,
+            "columnInfo": [
+                {
+                    "value": "погана",
+                    "indexes": [
+                        0,
+                        3
+                    ],
+                    "frequencies": {
+                        "помірний": 2
+                    },
+                    "entropy": 0
+                },
+                {
+                    "value": "невідома",
+                    "indexes": [
+                        1,
+                        4
+                    ],
+                    "frequencies": {
+                        "помірний": 1,
+                        "високий": 1
+                    },
+                    "entropy": 1
+                },
+                {
+                    "value": "хороша",
+                    "indexes": [
+                        2,
+                        5
+                    ],
+                    "frequencies": {
+                        "низький": 1,
+                        "помірний": 1
+                    },
+                    "entropy": 1
+                }
+            ]
+        },
+        "rootName": "Кредитна історія",
+        "branchValue": "15-35",
+        "parentRoot": "Величина доходів"
+    },
+    {
+        "type": "leaf",
+        "frequencies": {
+            "помірний": 2
+        },
+        "parentRoot": "Кредитна історія",
+        "value": "погана"
+    },
+    {
+        "root": {
+            "column": "Наявність кредиту",
+            "infoGained": 1,
+            "columnInfo": [
+                {
+                    "value": "значний",
+                    "indexes": [
+                        0
+                    ],
+                    "frequencies": {
+                        "помірний": 1
+                    },
+                    "entropy": 0
+                },
+                {
+                    "value": "малий",
+                    "indexes": [
+                        1
+                    ],
+                    "frequencies": {
+                        "високий": 1
+                    },
+                    "entropy": 0
+                }
+            ]
+        },
+        "rootName": "Наявність кредиту",
+        "branchValue": "невідома",
+        "parentRoot": "Кредитна історія"
+    },
+    {
+        "type": "leaf",
+        "frequencies": {
+            "помірний": 1
+        },
+        "parentRoot": "Наявність кредиту",
+        "value": "значний"
+    },
+    {
+        "type": "leaf",
+        "frequencies": {
+            "високий": 1
+        },
+        "parentRoot": "Наявність кредиту",
+        "value": "малий"
+    },
+    {
+        "root": {
+            "column": "Наявність кредиту",
+            "infoGained": 1,
+            "columnInfo": [
+                {
+                    "value": "малий",
+                    "indexes": [
+                        0
+                    ],
+                    "frequencies": {
+                        "низький": 1
+                    },
+                    "entropy": 0
+                },
+                {
+                    "value": "значний",
+                    "indexes": [
+                        1
+                    ],
+                    "frequencies": {
+                        "помірний": 1
+                    },
+                    "entropy": 0
+                }
+            ]
+        },
+        "rootName": "Наявність кредиту",
+        "branchValue": "хороша",
+        "parentRoot": "Кредитна історія"
+    },
+    {
+        "type": "leaf",
+        "frequencies": {
+            "низький": 1
+        },
+        "parentRoot": "Наявність кредиту",
+        "value": "малий"
+    },
+    {
+        "type": "leaf",
+        "frequencies": {
+            "помірний": 1
+        },
+        "parentRoot": "Наявність кредиту",
+        "value": "значний"
+    },
+    {
+        "root": {
+            "column": "Наявність застави",
+            "infoGained": 0.46956521111470695,
+            "columnInfo": [
+                {
+                    "value": "адекватна",
+                    "indexes": [
+                        0,
+                        1,
+                        5
+                    ],
+                    "frequencies": {
+                        "помірний": 2,
+                        "високий": 1
+                    },
+                    "entropy": 0.9182958340544896
+                },
+                {
+                    "value": "відсутня",
+                    "indexes": [
+                        2,
+                        3,
+                        4,
+                        6
+                    ],
+                    "frequencies": {
+                        "високий": 4
+                    },
+                    "entropy": 0
+                }
+            ]
+        },
+        "rootName": "Наявність застави",
+        "branchValue": "0-15",
+        "parentRoot": "Величина доходів"
+    },
+    {
+        "root": {
+            "column": "Наявність кредиту",
+            "infoGained": 0.9182958340544896,
+            "columnInfo": [
+                {
+                    "value": "малий",
+                    "indexes": [
+                        0,
+                        2
+                    ],
+                    "frequencies": {
+                        "помірний": 2
+                    },
+                    "entropy": 0
+                },
+                {
+                    "value": "значний",
+                    "indexes": [
+                        1
+                    ],
+                    "frequencies": {
+                        "високий": 1
+                    },
+                    "entropy": 0
+                }
+            ]
+        },
+        "rootName": "Наявність кредиту",
+        "branchValue": "адекватна",
+        "parentRoot": "Наявність застави"
+    },
+    {
+        "type": "leaf",
+        "frequencies": {
+            "помірний": 2
+        },
+        "parentRoot": "Наявність кредиту",
+        "value": "малий"
+    },
+    {
+        "type": "leaf",
+        "frequencies": {
+            "високий": 1
+        },
+        "parentRoot": "Наявність кредиту",
+        "value": "значний"
+    },
+    {
+        "type": "leaf",
+        "frequencies": {
+            "високий": 4
+        },
+        "parentRoot": "Наявність застави",
+        "value": "відсутня"
+    },
+    {
+        "root": {
+            "column": "Кредитна історія",
+            "infoGained": 0.46956521111470695,
+            "columnInfo": [
+                {
+                    "value": "невідома",
+                    "indexes": [
+                        0,
+                        1,
+                        2
+                    ],
+                    "frequencies": {
+                        "помірний": 2,
+                        "низький": 1
+                    },
+                    "entropy": 0.9182958340544896
+                },
+                {
+                    "value": "хороша",
+                    "indexes": [
+                        3
+                    ],
+                    "frequencies": {
+                        "низький": 1
+                    },
+                    "entropy": 0
+                },
+                {
+                    "value": "погана",
+                    "indexes": [
+                        4,
+                        5,
+                        6
+                    ],
+                    "frequencies": {
+                        "помірний": 3
+                    },
+                    "entropy": 0
+                }
+            ]
+        },
+        "rootName": "Кредитна історія",
+        "branchValue": "понад35",
+        "parentRoot": "Величина доходів"
+    },
+    {
+        "root": {
+            "column": "Наявність кредиту",
+            "infoGained": 0.9182958340544896,
+            "columnInfo": [
+                {
+                    "value": "значний",
+                    "indexes": [
+                        0,
+                        2
+                    ],
+                    "frequencies": {
+                        "помірний": 2
+                    },
+                    "entropy": 0
+                },
+                {
+                    "value": "малий",
+                    "indexes": [
+                        1
+                    ],
+                    "frequencies": {
+                        "низький": 1
+                    },
+                    "entropy": 0
+                }
+            ]
+        },
+        "rootName": "Наявність кредиту",
+        "branchValue": "невідома",
+        "parentRoot": "Кредитна історія"
+    },
+    {
+        "type": "leaf",
+        "frequencies": {
+            "помірний": 2
+        },
+        "parentRoot": "Наявність кредиту",
+        "value": "значний"
+    },
+    {
+        "type": "leaf",
+        "frequencies": {
+            "низький": 1
+        },
+        "parentRoot": "Наявність кредиту",
+        "value": "малий"
+    },
+    {
+        "type": "leaf",
+        "frequencies": {
+            "низький": 1
+        },
+        "parentRoot": "Кредитна історія",
+        "value": "хороша"
+    },
+    {
+        "type": "leaf",
+        "frequencies": {
+            "помірний": 3
+        },
+        "parentRoot": "Кредитна історія",
+        "value": "погана"
+    }
+]
